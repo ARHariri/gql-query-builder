@@ -12,7 +12,7 @@
     "build/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc & cp -r ./build/* ./lib",
     "watch": "tsc --watch",
     "lint": "tslint --format stylish --project .",
     "test": "jest --config"
