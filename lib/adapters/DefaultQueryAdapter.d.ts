@@ -21,7 +21,6 @@ export default class DefaultQueryAdapter implements IQueryAdapter {
   };
   queryDataNameAndArgumentMap(): string;
   private queryDataArgumentAndTypeMap;
-  private queryDataType;
   private operationWrapperTemplate;
   private operationTemplate;
 }
