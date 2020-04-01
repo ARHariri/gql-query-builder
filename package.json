@@ -8,10 +8,11 @@
     "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && cp -r ./build/* ./lib",
+    "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
     "lint": "tslint --format stylish --project .",
-    "test": "jest --config"
+    "test": "jest --config",
+    "build:release": "npm run build && cp -r ./build/* ./lib"
   },
   "keywords": [
     "graphql",
